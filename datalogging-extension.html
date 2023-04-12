@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Data Lab</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <a href="https://scienceoxford.com" target="_blank"><img src=".\images\so_logo.png" alt="Science Oxford Logo" width="400px" height="auto"></a>
+    <h1>Using the Data Logger Extension</h1>
+  </header>
+
+  <div id="intro">
+    <p>After adding the code, as shown below, the process for getting your data off the micro:bit is a bit tricky!</p>
+    <p><strong>This extension only works with V2 micro:bits.</strong></p>
+    <br>
+  </div>
+
+  <div id="extension" class="left">
+    <h3>Adding the Extension</h3>
+    <p>Click <strong>Extensions</strong> from the menu, and choose the <strong>datalogger</strong> option.</p>
+    <img src=".\images\add-datalogger-extension.png" alt="block code, as described below" width="800px" height="auto">
+    <p>You will now have an extra section in your menu called <strong>Data Logger</strong>.</p>
+    <br>
+  </div>
+
+  <div id="code" class="left">
+    <h3>The Code</h3>
+    <p>Add two new blocks of code from the <strong>Data Logger</strong> extension, as shown below.</p>
+    <ul>
+      <li><strong>delete log</strong> - this clears the log to make sure you can find your most up-to-date readings.</li>
+      <li><strong>log data</strong> - in the <strong>column</strong> box, type the heading for your column; in the <strong>value</strong> box, put the sensor you want to read from.</li>
+    </ul>
+    <img src=".\images\data-screenshot-with-logger.png" alt="block code, as described below" width="800px" height="auto">
+    <br>
+  </div>
+
+  <div id="data" class="left">
+    <h3>Getting your Data</h3>
+    <p><strong>Each time you change your code, or want to get new data - follow these instructions.</strong></p>
+    <br>
+    <ol>
+      <li><strong>Download your new code</strong> to your micro:bit.</li>
+      <li><strong>Run your data collection code</strong> to get some data (it will show on your OLED screen).</li>
+      <p class="debugging">The next part will power off the OLED screen, so <strong>take a photograph</strong> of the graph if you want to.</p>
+      <li><strong>Unplug your micro:bit and plug it back in again</strong> (clicking 'reset' is not enough).</li>
+      <p class="debugging"><strong>Do not run your data collection code again</strong>, this will delete the earlier data.</p>
+      <li>Open <strong>Windows File Explorer</strong>, and open the <strong>Microbit</strong> drive from the left-hand menu.</li>
+      <img src=".\images\microbit-drive.PNG" alt="block code, as described below" width="200px" height="auto">
+      <li>Open <strong>MY_DATA.HTM</strong> - this will open in the web browser.</li>
+      <li>See the <strong>table of data</strong>, and click <strong>Visual preview</strong> to see it as a graph. Does this look the same as the one on your OLED screen?</li>
+      <p class="debugging">Your log will be deleted each time you run the code, so if you want to keep it <strong>click Download</strong> to save a .csv file.</p>
+      <li><strong>Close the browser tab</strong> when you are finished with the data.</li>
+    </ol>
+    <br>
+    <p>Whenever you make changes to your code, or run your data collection code again, the table will change - follow the instructions above each time to get your latest data.</p>
+  </div>
+
+  <nav class="links bg_green">
+    <a href="index.html">Go Back</a>
+  </nav>
+
+  <footer class="links">
+    <a href="https://github.com/ScienceOxford/datalogging" target="_blank">View on GitHub</a>
+  </footer>
+
+</body>
+</html>
